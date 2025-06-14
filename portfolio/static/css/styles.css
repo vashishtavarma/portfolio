@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    font-weight: 400;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+  
+  .header .subtitle {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    font-weight: 400;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
+  
+  .contact-item a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .contact-item a:hover {
+    opacity: 0.8;
+  }
+  
+  /* Main Content */
+  .main-content {
+    background: white;
+    margin: -30px auto 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .section {
+    padding: 50px 60px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .section:last-child {
+    border-bottom: none;
+  }
+  
+  .section-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+  }
+  
+  .section-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  
+  /* Career Objectives */
+  .objectives p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    font-weight: 400;
+  }
+  
+  /* Education */
+  .education-item {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #667eea;
+  }
+  
+  .education-item h3 {
+    font-family: "Poppins", sans-serif;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  
+  .education-item .institution {
+    font-family: "Poppins", sans-serif;
+    color: #666;
+    margin-bottom: 5px;
+    font-weight: 400;
+  }
+  
+  .education-item .grade {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #27ae60;
+  }
+  
+  /* Skills */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill-category {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #e74c3c;
+  }
+  
+  .skill-category h3 {
+    font-family: "Poppins", sans-serif;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .skill-category p {
+    font-family: "Poppins", sans-serif;
+    color: #666;
+    font-weight: 400;
+  }
+  
+  /* Achievements */
+  .achievement-item {
+    background: #fff3cd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 4px solid #ffc107;
+  }
+  
+  .achievement-item p {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 5px;
+    font-weight: 400;
+  }
+  
+  .achievement-item a {
+    font-family: "Poppins", sans-serif;
+    color: #856404;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .achievement-item a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Projects */
+  .project-item {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border-left: 4px solid #28a745;
+  }
+  
+  .project-item h3 {
+    font-family: "Poppins", sans-serif;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .project-item h3 a {
+    font-family: "Poppins", sans-serif;
+    color: #2c3e50;
+    text-decoration: none;
+  }
+  
+  .project-item h3 a:hover {
+    color: #28a745;
+  }
+  
+  .project-item ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .project-item li {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+    font-weight: 400;
+  }
+  
+  .project-item li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  /* Certificates */
+  .certificate-item {
+    background: #e8f4fd;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #17a2b8;
+  }
+  
+  .certificate-item h3 {
+    font-family: "Poppins", sans-serif;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .certificate-item h3 a {
+    font-family: "Poppins", sans-serif;
+    color: #2c3e50;
+    text-decoration: none;
+  }
+  
+  .certificate-item h3 a:hover {
+    color: #17a2b8;
+  }
+  
+  .certificate-item ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .certificate-item li {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
+    font-weight: 400;
+  }
+  
+  .certificate-item li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #17a2b8;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .footer p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 2rem;
+    }
+  
+    .contact-info {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .section {
+      padding: 30px 20px;
+    }
+  
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 15px;
+    }
+  
+    .header {
+      padding: 40px 0;
+    }
+  
+    .header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .section-title {
+      font-size: 1.5rem;
+    }
+  }
+  
